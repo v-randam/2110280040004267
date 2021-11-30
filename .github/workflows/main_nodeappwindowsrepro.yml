@@ -31,7 +31,8 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: .
+          path: .\dist\
+# The compiled app is located at .\dist\
 
   deploy:
     runs-on: ubuntu-latest
