@@ -8,7 +8,6 @@ on:
     branches:
       - main
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: windows-latest
@@ -32,7 +31,6 @@ jobs:
         with:
           name: node-app
           path: .\dist\
-# The compiled app is located at .\dist\
 
   deploy:
     runs-on: ubuntu-latest
